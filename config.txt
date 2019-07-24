@@ -1,0 +1,3 @@
+AUTHOR=Amanda Lee
+JIRA_ISSUE=[CPFH-476][CIE]New data model for patient visit info
+CON_ALERT_PHR_CITIZEN=alertphr/alert@COMPAL_DEV2_CITIZEN
