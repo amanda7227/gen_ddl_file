@@ -1,0 +1,14 @@
+Patient visitations to the institution
+id_visit|number|24|N|P
+flg_status|varchar|2|N
+id_citizen|citizen.id_citizen|N
+id_institution|institution.id_institution|N
+dt_begin_tstz|time|6|N
+dt_end_tstz|time|6|Y
+dt_creation|time|6|Y
+create_user|varchar|24|Y
+create_time|time|6|Y
+create_institution|number|24|Y
+update_user|varchar|24|Y
+update_time|time|6|Y
+update_institution|number|24|Y

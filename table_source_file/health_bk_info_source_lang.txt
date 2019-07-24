@@ -1,0 +1,5 @@
+List of all health bank information source descriptions
+id_health_bk_info_source|health_bk_info_source.id_health_bk_info_source|N|P
+id_language|language.id_language|N|P
+health_bk_info_source_desc|varchar|2000|N
+flg_available|varchar|1|N

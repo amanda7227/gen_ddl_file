@@ -1,0 +1,5 @@
+-- CHANGED BY: Amanda Lee
+-- CHANGE DATE: 2019-07-24
+-- CHANGE REASON: [CPFH-476][CIE]New data model for patient visit info
+CREATE INDEX LTH_IHBDT_FK_IDX on HEALTH_BK_DEPT_TYPE_LANG (ID_HEALTH_BK_DEPT_TYPE) tablespace ALERT_PHR_IDX;
+-- CHANGE END: Amanda Lee

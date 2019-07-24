@@ -1,0 +1,5 @@
+List of all health bank department type description
+id_health_bk_dept_type|health_bk_dept_type.id_health_bk_dept_type|N|P
+id_language|language.id_language|N|P
+health_bk_dept_type_desc|varchar|2000|N
+flg_available|varchar|1|N

@@ -1,0 +1,10 @@
+All health bank informate source list
+id_health_bk_info_source|number|24|N|P
+health_bk_info_source_desc|varchar|2000|N
+flg_available|varchar|1|N
+create_user|varchar|24|Y
+create_time|time|6|Y
+create_institution|number|24|Y
+update_user|varchar|24|Y
+update_time|time|6|Y
+update_institution|number|24|Y

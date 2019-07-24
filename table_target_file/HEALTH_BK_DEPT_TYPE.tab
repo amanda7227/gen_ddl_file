@@ -1,0 +1,17 @@
+-- CHANGED BY: Amanda Lee
+-- CHANGE DATE: 2019-07-24
+-- CHANGE REASON: [CPFH-476][CIE]New data model for patient visit info
+Create table HEALTH_BK_DEPT_TYPE
+(
+ID_HEALTH_BK_DEPT_TYPE NUMBER(24) NOT NULL,
+FLG_AVAILABLE          VARCHAR2(001 CHAR) NOT NULL
+);
+-- Add comments to the table
+COMMENT ON TABLE HEALTH_BK_DEPT_TYPE IS 'All health bank department type list';
+-- Add comments to the columns
+COMMENT ON column HEALTH_BK_DEPT_TYPE.ID_HEALTH_BK_DEPT_TYPE IS 'ID_HEALTH_BK_DEPT_TYPE'; 
+COMMENT ON column HEALTH_BK_DEPT_TYPE.FLG_AVAILABLE IS 'FLG_AVAILABLE'; 
+
+-- Create/Recreate primary, unique and foreign key constraints
+ALTER TABLE HEALTH_BK_DEPT_TYPE add CONSTRAINT HEALTH_BK_DEPT_TYPE_PK  primary key(ID_HEALTH_BK_DEPT_TYPE); 
+-- CHANGE END: Amanda Lee

@@ -1,0 +1,21 @@
+-- CHANGED BY: Amanda Lee
+-- CHANGE DATE: 2019-07-24
+-- CHANGE REASON: [CPFH-476][CIE]New data model for patient visit info
+Create table HEALTH_BK_DEPT_TYPE_LANG
+(
+ID_HEALTH_BK_DEPT_TYPE   NUMBER(24) NOT NULL,
+ID_LANGUAGE              NUMBER(6) NOT NULL,
+HEALTH_BK_DEPT_TYPE_DESC VARCHAR2(2000 CHAR) NOT NULL,
+FLG_AVAILABLE            VARCHAR2(001 CHAR) NOT NULL
+);
+-- Add comments to the table
+COMMENT ON TABLE HEALTH_BK_DEPT_TYPE_LANG IS 'List of all health bank department type description';
+-- Add comments to the columns
+COMMENT ON column HEALTH_BK_DEPT_TYPE_LANG.ID_HEALTH_BK_DEPT_TYPE IS 'Primary key'; 
+COMMENT ON column HEALTH_BK_DEPT_TYPE_LANG.ID_LANGUAGE IS 'Language id'; 
+COMMENT ON column HEALTH_BK_DEPT_TYPE_LANG.HEALTH_BK_DEPT_TYPE_DESC IS 'The description of HEALTH_BK_DEPT_TYPE'; 
+COMMENT ON column HEALTH_BK_DEPT_TYPE_LANG.FLG_AVAILABLE IS 'The HEALTH_BK_DEPT_TYPE is available or not:Y-Yes,N-No'; 
+
+-- Create/Recreate primary, unique and foreign key constraints
+ALTER TABLE HEALTH_BK_DEPT_TYPE_LANG add CONSTRAINT HEALTH_BK_DEPT_TYPE_LANG_PK  primary key(ID_HEALTH_BK_DEPT_TYPE,ID_LANGUAGE); 
+-- CHANGE END: Amanda Lee

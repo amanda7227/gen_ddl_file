@@ -1,0 +1,5 @@
+-- CHANGED BY: Amanda Lee
+-- CHANGE DATE: 2019-07-24
+-- CHANGE REASON: [CPFH-476][CIE]New data model for patient visit info
+CREATE INDEX VIS_II_FK_IDX on VISIT (ID_INSTITUTION) tablespace ALERT_PHR_IDX;
+-- CHANGE END: Amanda Lee

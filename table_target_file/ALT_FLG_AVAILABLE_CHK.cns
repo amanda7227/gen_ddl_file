@@ -1,0 +1,5 @@
+-- CHANGED BY: Amanda Lee
+-- CHANGE DATE: 2019-07-24
+-- CHANGE REASON: [CPFH-476][CIE]New data model for patient visit info
+ALTER TABLE HEALTH_BK_DEPT_TYPE add CONSTRAINT ALT_flg_available_CHK CHECK(flg_available IN ('Y','N'));
+-- CHANGE END: Amanda Lee

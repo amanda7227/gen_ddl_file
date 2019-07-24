@@ -1,0 +1,17 @@
+-- CHANGED BY: Amanda Lee
+-- CHANGE DATE: 2019-07-24
+-- CHANGE REASON: [CPFH-476][CIE]New data model for patient visit info
+Create table HEALTH_BK_INFO_SOURCE
+(
+ID_HEALTH_BK_INFO_SOURCE NUMBER(24) NOT NULL,
+FLG_AVAILABLE            VARCHAR2(001 CHAR) NOT NULL
+);
+-- Add comments to the table
+COMMENT ON TABLE HEALTH_BK_INFO_SOURCE IS 'All health bank informate source list';
+-- Add comments to the columns
+COMMENT ON column HEALTH_BK_INFO_SOURCE.ID_HEALTH_BK_INFO_SOURCE IS 'ID_HEALTH_BK_INFO_SOURCE'; 
+COMMENT ON column HEALTH_BK_INFO_SOURCE.FLG_AVAILABLE IS 'FLG_AVAILABLE'; 
+
+-- Create/Recreate primary, unique and foreign key constraints
+ALTER TABLE HEALTH_BK_INFO_SOURCE add CONSTRAINT HEALTH_BK_INFO_SOURCE_PK  primary key(ID_HEALTH_BK_INFO_SOURCE); 
+-- CHANGE END: Amanda Lee

@@ -1,0 +1,3 @@
+All health bank department type list
+id_health_bk_dept_type|number|24|N|P
+flg_available|varchar|1|N
